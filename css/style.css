@@ -335,9 +335,9 @@ img{
 }
 
 .home_img{
-  width: 120px;
+  width: 100px;
   height: 120px;
-  border-radius: 50%;
+  border-radius: 10%;
   justify-self: center;
   margin-bottom: var(--mb-1);
 }
@@ -452,7 +452,7 @@ img{
 
 .education_studies,
 .experience_company{
-  font-size: var(--small-font-size);
+  font-size: var(--h3-font-size);
   color: var(--title-color);
 }
 
