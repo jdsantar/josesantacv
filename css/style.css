@@ -461,30 +461,43 @@ img{
 }
 
 /*========== SKILLS AND LANGUAGES ==========*/
-.skills_content,
-.languaje_content{
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.skills_content{
+.skills_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0;
+  align-items: center;
 }
 
-.skills_name,
-.languages_name{
+.skills_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  min-width: 180px;
+}
+
+.skills_data:nth-child(2) {
+  align-items: left;
+  justify-content: center;
+}
+
+.skills_name {
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-3);
+  gap: 8px;
+  margin-bottom: var(--mb-1);
 }
 
-.skills_circle,
-.languages_circle{
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  background-color: var(--text-color);
+.skills_circle {
+  width: 8px;
+  height: 8px;
+  background: #555;
   border-radius: 50%;
-  margin-right: .75rem;
+  display: inline-block;
+  margin-right: 8px;
 }
 
 /*========== CERTIFICATES ==========*/
